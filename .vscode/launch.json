@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:useful-scripts-for-server-side-swift-projects-sample}",
+      "name": "Debug MyApp",
+      "program": "${workspaceFolder:useful-scripts-for-server-side-swift-projects-sample}/.build/debug/MyApp",
+      "preLaunchTask": "swift: Build Debug MyApp"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:useful-scripts-for-server-side-swift-projects-sample}",
+      "name": "Release MyApp",
+      "program": "${workspaceFolder:useful-scripts-for-server-side-swift-projects-sample}/.build/release/MyApp",
+      "preLaunchTask": "swift: Build Release MyApp"
+    }
+  ]
+}
