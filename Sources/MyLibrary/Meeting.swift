@@ -1,3 +1,10 @@
+//
+//  Meeting.swift
+//  MIT license
+//
+//  Copyright (c) 2021-2024 Binary Birds Kft
+//
+
 import Foundation
 
 public struct Meeting {

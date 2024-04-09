@@ -9,9 +9,9 @@ CURRENT_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 REPO_ROOT="$(git -C "${CURRENT_SCRIPT_DIR}" rev-parse --show-toplevel)"
 
 read -ra PATHS_TO_CHECK <<< "$( \
-  git -C "${REPO_ROOT}" ls-files -z \
-  "Package.swift" \
-  | xargs -0 \
+    git -C "${REPO_ROOT}" ls-files -z \
+        "Package.swift" \
+    | xargs -0 \
 )"
 
 for FILE_PATH in "${PATHS_TO_CHECK[@]}"; do
